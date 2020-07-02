@@ -1,0 +1,21 @@
+{
+  "name": "starterkit-javascript",
+  "version": "1.0.0",
+  "description": "starterkit with http-requests for icfpc",
+  "main": "index.js",
+  "scripts": {
+    "run": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icfpcontest2020/starterkit-javascript.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icfpcontest2020/starterkit-javascript/issues"
+  },
+  "homepage": "https://github.com/icfpcontest2020/starterkit-javascript#readme",
+  "dependencies": {
+    "got": "^11.3.0"
+  }
+}
