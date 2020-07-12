@@ -9,9 +9,13 @@ sendRequest();
 
 async function sendRequest() {
     try {
-        const response = await got(`${serverUrl}?playerKey=${playerKey}`);
-        console.log(response.body);
+        const response = await got.post(`${serverUrl}`, {body: `${playerKey}`});
+        console.log(`Server response:`, response.body);
     } catch (e) {
-        throw e;
+        console.log(`Unexpected server response:\n`, e);
+        if (typeof e.response !== 'undefined') {
+            console.log(`\nResponse body:`, e.response.body);
+        }
+        process.exit(1);
     }
 }

@@ -1,3 +1,3 @@
 #!/bin/sh
 
-node app/index.js "$@"
+node app/index.js "$@" || echo "run error code: $?"
